@@ -1,5 +1,6 @@
 Blogger::Application.routes.draw do
   root to: 'articles#index'
+    root 'drinks#index'
   resources :articles do
     resources :comments
   end
@@ -9,7 +10,6 @@ end
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'drinks#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
