@@ -4,5 +4,5 @@
     <li> <%= link_to article.title, article_path(article) %></li>
   <% end %>
   </ul>
-<br /><a href = "https://test-albatross7817.c9.io/tags/">View All Tags</a>
+<br /><%= link_to "View All Tags", tags_path %>
 <br /><%= link_to "<< Back to Articles List", articles_path %>
